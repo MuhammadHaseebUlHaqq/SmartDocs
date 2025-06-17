@@ -27,6 +27,13 @@ if not GOOGLE_API_KEY:
     print("WARNING: GOOGLE_API_KEY environment variable is not set. AI features will not work.")
     GOOGLE_API_KEY = None
 
+# OpenAI API Key (optional – only required if you explicitly wire up OpenAI-based features)
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+if not OPENAI_API_KEY:
+    # Do NOT crash the application – just warn so optional features can be disabled gracefully.
+    print("WARNING: OPENAI_API_KEY environment variable is not set. OpenAI-dependent features will be disabled.")
+    OPENAI_API_KEY = None
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
