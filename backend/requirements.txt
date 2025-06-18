@@ -51,4 +51,4 @@ transformers==4.39.3
 sentence-transformers==4.1.0
 
 # PyTorch CPU build
-torch==2.2.2+cpu ; platform_system=="Linux" && platform_machine=="x86_64" 
+torch==2.2.2  # pin torch; CPU wheel will be selected automatically by pip 
