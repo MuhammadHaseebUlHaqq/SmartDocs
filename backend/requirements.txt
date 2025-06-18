@@ -45,4 +45,10 @@ gunicorn==21.2.0
 whitenoise==6.6.0
 
 # Transformers
-transformers==4.39.3 
+transformers==4.39.3
+
+# Hugging Face sentence embeddings
+sentence-transformers==4.1.0
+
+# PyTorch CPU build
+torch==2.2.2+cpu ; platform_system=="Linux" && platform_machine=="x86_64" 
